@@ -20,7 +20,7 @@ func main() {
 
 	broker := utils.GetEnv("MQTT_BROKER", "tcp://test.mosquitto.org:1883")
 	clientID := utils.GetEnv("MQTT_CLIENT_ID", "go-mqtt-client-123")
-	baseInputTopic := utils.GetEnv("MQTT_BASE_INPUT_TOPIC", "BRE/ree")
+	baseInputTopic := utils.GetEnv("MQTT_BASE_INPUT_TOPIC", "BRE/calculateWinterSupplementInput")
 
 	customTopicID := flag.String("topicID", "", "Custom topic ID for MQTT input subscription")
 	flag.Parse()
